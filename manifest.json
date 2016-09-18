@@ -1,7 +1,7 @@
 {
     "name": "GyazzExec",
     "short_name": "GyazzExec",
-    "version": "0.0.17",
+    "version": "0.0.18",
     "manifest_version": 2,
     "description": "Gyazzのコード実行",
 
@@ -13,12 +13,12 @@
     },
 
     "browser_action": {
-	"default_icon": "icons/gyazzslide-19.png"
+	"default_icon": "icons/gyazzexec-19.png"
     },
     
     "icons": {
-	"48": "icons/gyazzslide-48.png",
-	"96": "icons/gyazzslide-96.png"
+	"48": "icons/gyazzexec-48.png",
+	"96": "icons/gyazzexec-96.png"
     },
 
     "background": {
