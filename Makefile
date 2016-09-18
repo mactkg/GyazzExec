@@ -1,7 +1,8 @@
 #
 # Firefox拡張機能用のxpiを作る
 #
-XPIFILES=manifest.json exec.js exec_bg.js icons
+# XPIFILES=manifest.json exec.js exec_bg.js jquery-2.1.4.min.js p5.min.js icons
+XPIFILES=manifest.json exec.js exec_bg.js jquery-2.1.4.min.js icons
 xpi:
 	/bin/rm -f gyazzexec.xpi
 	zip -r gyazzexec.xpi ${XPIFILES}
