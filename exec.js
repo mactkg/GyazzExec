@@ -32,9 +32,9 @@ chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
 	}
     }
 
-    //a = $('<script>');
-    //a.attr("src","https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.js");
-    //$('body').append(a);
+    a = $('<script>');
+    a.attr("src","https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.js");
+    $('body').append(a);
 
     a = $('<script>');
     a.text(codestr);
