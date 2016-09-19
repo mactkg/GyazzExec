@@ -1,13 +1,13 @@
 {
-    "name": "GyazzExec",
-    "short_name": "GyazzExec",
-    "version": "0.0.31",
+    "name": "Gyazz_Exec",
+    "short_name": "Gyazz_Exec",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "Gyazzのコード実行",
 
     "applications": {
 	"gecko": {
-	    "id": "gyazzexec@pitecan.com",
+	    "id": "gyazz_exec@pitecan.com",
 	    "strict_min_version": "45.0"
 	}
     },

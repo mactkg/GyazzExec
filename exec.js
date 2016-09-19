@@ -1,11 +1,11 @@
 //
-// 本体JS
+// main part
 //
 indent = function(text){
   return text.match(/^(\s)*/)[0].length;
 };
 
-// exec_bg.js から呼ばれる
+// called from exec_bg.js
 chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
     lines = $('.lines > .line > .text');
 
@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
 	line = lines[index];
 	text = $(line).text();
 	if(processing == 'no'){
-	    // JavaScriptのコード記法を検出
+	    // detect JavaScript code block
 	    if(text.match(/^\s*javascript\s*$/) || text.match(/^\s*\w+\.js\s*$/)){
 		processing = 'yes';
 		codeindent = indent(text);
@@ -31,10 +31,6 @@ chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
 	    }
 	}
     }
-
-    a = $('<script>');
-    a.attr("src","https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.js");
-    $('body').append(a);
 
     a = $('<script>');
     a.text(codestr);
